@@ -36,14 +36,18 @@ namespace CardGames
 				if ( SwinGame.KeyTyped (KeyCode.vk_LSHIFT) && SwinGame.KeyTyped (KeyCode.vk_RSHIFT))
 				{
 				//TODO: add sound effects
+				SwinGame.LoadSoundEffectNamed("Slap","slap.wav");
+				
 				}
 				else if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT))
 				{
 				myGame.PlayerHit (0);
+				SwinGame.PlaySoundEffect("Slap");
 				}
 				else if (SwinGame.KeyTyped (KeyCode.vk_RSHIFT))
 				{
 				myGame.PlayerHit (1);
+				SwinGame.PlaySoundEffect("Slap");
 				}
 			}
 
@@ -87,7 +91,9 @@ namespace CardGames
 			myGame.Update(); // just ask the game to do this...
 		}
 
-        public static void Main()
+
+
+		public static void Main()
         {
             //Open the game window
             SwinGame.OpenGraphicsWindow("Snap!", 860, 500);
