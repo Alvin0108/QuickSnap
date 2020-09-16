@@ -14,7 +14,7 @@ namespace CardGames
         }
 
 		{
-			SwinGame.LoadFontNamed("GameFont","Chunckfive.otf",24)
+			SwinGame.LoadFontNamed("GameFont","Chunkfive.otf",24)
 		}
 
 		/// <summary>
