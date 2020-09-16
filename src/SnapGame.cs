@@ -38,12 +38,12 @@ namespace CardGames
 				else if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT))
 				{
 				myGame.PlayerHit (0);
-				SwinGame.PlaySoundEffect("slap");
+				SwinGame.PlaySoundEffect("Slap");
 				}
 				else if (SwinGame.KeyTyped (KeyCode.vk_RSHIFT))
 				{
 				myGame.PlayerHit (1);
-				SwinGame.PlaySoundEffect("slap");
+				SwinGame.PlaySoundEffect("Slap");
 				}
 			}
 
